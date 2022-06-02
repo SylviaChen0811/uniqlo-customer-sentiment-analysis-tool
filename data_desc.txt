@@ -1,0 +1,42 @@
+1. category dictionary: category name to categoryId - women
+# for women
+category_dict = {
+    "outwear": 23327,
+    "tops": 23332,
+    "bottoms": 23338,
+    "dresses_jumpsuits": 23346,
+    "innner_wear": 23347,
+    "loungewear_home": 23356,
+    "accessories_shoes": 23359,
+    "sport_utility_wear": 23363,
+    "maternity": 23364,
+}
+
+# for men
+category_dict = {
+    "outwear": 23377,
+    "tops": 23383,
+    "bottoms": 23391,
+    "innner_wear": 23398,
+    "loungewear_home": 23404,
+    "accessories_shoes": 23407,
+    "sport_utility_wear": 23412,
+}
+
+2. fields = ['reviewId', 'productId', 'categroyId', 'rate', 'fit', 'comment', 'title', 'rating_average', 'rating_count', 'rating_fit', 'rating_1', 'rating_2', 'rating_3', 'rating_4', 'rating_5', 'heightRange', 'weightRange', 'shoeSize', 'purchasedSize', 'helpfulCount', 'ageRange', 'gender', 'location', 'name', 'createDate', 'isIncentivized', 'userCanLike', 'userCanReport']
+
+rate: rate posted by this reviewer (for this review)
+fit: fit rate posted by this reviewer (for this review)
+comment: comment posted by this reviewer (for this review)
+title: title posted by this reviewer (for this review)
+
+'rating_average', average rating of this product 
+'rating_count', total number of ratings of this product
+'rating_fit', average rating on fit of this product 
+'rating_1', total number of 1 star ratings of this product
+'rating_2', total number of 2 star ratings of this product
+'rating_3', total number of 3 star ratings of this product
+'rating_4', total number of 4 star ratings of this product
+'rating_5', total number of 5 star ratings of this product
+
+3. Sample API: https://www.uniqlo.com/us/api/commerce/v5/en/products/E439807-000/reviews?offset=36&limit=10&sort=submission_time&httpFailure=true
